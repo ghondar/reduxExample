@@ -1,8 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 
-
-@connect()
 export default class Home extends Component{
 
   static contextTypes = {
