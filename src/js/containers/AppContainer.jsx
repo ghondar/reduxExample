@@ -25,13 +25,20 @@ export default class AppContainer extends React.Component{
         <Provider store={store}>
           { () => <Root {...this.props} />}
         </Provider>
-        <DebugPanel top right bottom>
-          <DevTools 
-            store={store}
-            monitor={LogMonitor}
-          />
-        </DebugPanel>
+        { this.renderDevTools() }
       </Layout>
+    )
+  }
+
+  renderDevTools(){
+    // return 
+    return (
+      <DebugPanel top right bottom>
+        <DevTools 
+          store={store}
+          monitor={LogMonitor}
+        />
+      </DebugPanel>
     )
   }
 }

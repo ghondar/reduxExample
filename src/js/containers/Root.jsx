@@ -15,8 +15,11 @@ export default class Root extends React.Component{
   }
 
   render(){
+    const { user } = this.props
     return (
-      <RouteHandler {...this.props} /> 
+      <RouteHandler
+        user={user}
+      /> 
     )
   }
 }

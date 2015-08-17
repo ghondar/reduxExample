@@ -6,7 +6,7 @@ export default class Home extends Component{
   render(){
     return (
       <div>
-        <h1>Welcome to Home: {this.props.title}</h1>
+        <h1>Welcome to Home: {this.props.user}</h1>
         <Link to="/about">Go About</Link>
       </div>
     )
